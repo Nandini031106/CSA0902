@@ -1,0 +1,17 @@
+#include <stdio.h>  
+#include <math.h>  
+ int main() 
+ {  
+ int a, b, c;  
+ printf("Enter the side 'a': ");  
+ scanf("%d", &a);  
+ printf("Enter the side 'b': ");  
+ scanf("%d", &b);  
+ c = sqrt(a * a + b * b);  
+ printf("The length of the Hypotenuse is: %d\n", c);  
+ return 0;  
+}  
+output:
+Enter the side 'a': 3
+Enter the side 'b': 4
+The length of the Hypotenuse is: 5
