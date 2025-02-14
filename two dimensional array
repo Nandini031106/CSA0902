@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main(){
+  
+   int value[2][3];
+   
+   int i, j;
+   for(i=0; i<2; i++) {
+      for(j=0;j<3;j++) {
+         printf("Enter value for value[%d][%d]:", i, j);
+         scanf("%d", &value[i][j]);
+      }
+   }
+  
+   printf("Two Dimensional array elements:\n");
+   for(i=0; i<2; i++) {
+      for(j=0;j<3;j++) {
+         printf("%d ", value[i][j]);
+         if(j==2){
+            printf("\n");
+         }
+      }
+   }
+   return 0;
+}
+output;
+Enter value for value[0][0]:1
+Enter value for value[0][1]:2
+Enter value for value[0][2]:3
+Enter value for value[1][0]:4
+Enter value for value[1][1]:5
+Enter value for value[1][2]:6
+Two Dimensional array elements:
+1 2 3 
+4 5 6 
+
