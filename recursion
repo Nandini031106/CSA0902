@@ -1,0 +1,61 @@
+#include <stdio.h>
+int sum(int n);
+int main() {
+int number, result;
+printf("Enter a positive integer: ");
+scanf("%d", &number);
+result = sum(number);
+ printf("sum = %d", result);
+ return 0;
+}
+int sum(int n) {
+    if (n != 0)
+ return n + sum(n-1); 
+    else
+        return n;
+}
+output;
+Enter a positive integer: 5
+sum = 15
+
+
+#include<stdio.h>
+long int factorial(int n);
+int main() {
+int n;
+printf("Enter a positive integer: ");
+scanf("%d",&n);
+printf("Factorial of %d = %ld", n, factorial(n));
+return 0;
+}
+long int factorial(int n) {
+if (n>=1)
+return n*factorial(n-1);
+else
+return 1;
+}
+output:
+Enter a positive integer: 3
+Factorial of 3 = 6
+
+
+#include <stdio.h>
+int fibonacci(int n) {
+    if (n <= 0) {
+        return 0;
+    } else if (n == 1) {
+        return 1;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+int main() {
+int n=10, i;
+printf("Fibonacci Series: ");
+ for (i = 0; i < n; i++) {
+printf("%d ", fibonacci(i));
+    }
+return 0;
+}
+output:
+Fibonacci Series: 0 1 1 2 3 5 8 13 21 34 
