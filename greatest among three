@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    int x=12,y=13,z=15;
+    if(x>y&&x>z)
+    printf("x is greatest num=%d",x);
+    else if(y>x&&y>z)
+    printf("y is greatest num=%d",y);
+    else 
+    printf("z is greatest num=%d",z);
+    
+}
